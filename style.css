@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background:border-box;
+}
+*::selection{
+    background-color: #db6d13 ;
+    color: #fff;
+}
+body,html{
+  background-color: #131414;
+  
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #100b1b;
+  border-radius: 4%;
+  height: 25%;
+  width: 25%;
+  transition: background-color 0.5s linear;
+
+}
+
+html::-webkit-scrollbar-thumb:hover{
+  background-color: #191329;
+  transition: background-color 0.5s linear;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: #06030e;
+}
+html::-webkit-scrollbar{
+  width: 12px;
+ 
+}
+
+.fontgoogle{
+    font-family: 'Spline Sans', sans-serif !important;
+}
+.alink{
+    transition: color 0.4s linear , margin-left 0.3s linear !important;
+}
+.alink:hover{
+    color: #944707 !important;
+    margin-left: 5px !important;
+}
+
+.activee{
+    color: #db6d13 !important;
+}
+
+/* ______________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________ */
+
+/* ---------------------------------------------------------------top button-------------------------------------- */
+.i_button_top{
+    display: inline-block;
+    color: #fff !important;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+.a_button_top{
+    display: none;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 4500;
+    opacity: .5;
+}
+.a_button_top:hover{
+    background: rgb(0, 0, 0);
+    opacity: .5;
+}
+.a_button_top.scrollh{
+    display: block;
+    transition: display 0.5s linear;
+}
+
+/* ----------------------------------------------------------------end top button--------------------------------- */
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- nav bar --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.fixed-top.scrolled{
+    background-color:#07040f !important;
+    transition:background-color 0.5s linear;
+}
+.text-p{
+    color: #cacaca;
+}
+.active{
+  color: #db6d13 !important;
+}
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- nav bar --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+/* ________________________________________________________________________________________________________________________|
+__________________________________________________________header____________________________________________________
+_______________________________________________________________________________________ */
+.header-bg{
+    background-image: url(img/header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+height: 100vh;
+}
+
+.blur-header{
+    background-color:#db6d135d;
+    height: 100vh;
+    padding-top: 10pc;
+    margin-top: -3pc;
+}
+.h1-header{
+    padding-top: 18pc;
+    font-size: 6.154rem;
+    line-height: 6.154rem;
+    font-weight: 800;
+    margin-bottom: 2.308rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+.butoon-header{
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+}
+.butoon-header:hover{
+    border-bottom: 1px solid #db6d13;
+    color:#db6d13 important;
+   
+    transition :border-bottom 0.5s linear  ;
+}
+.btn:hover {color:#db6d13 important;  transition :color 0.5s linear  ;}
+
+.icon-header{
+    font-size: 22px;
+    transition: color 0.5s linear;
+ }
+ .icon-header:hover{
+     color: rgba(255, 255, 255, 0.425) !important;
+ }
+ 
+/* ________________________________________________________________________________________________________________________|
+__________________________________________________________header____________________________________________________
+_______________________________________________________________________________________ */
+
+.bg-sec2{
+    background-color: #181f1f;
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- contact --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+.icon-contact{
+    float: left;
+    font-size: 30px;
+    color: #db6d13;
+    border-right: 0.5px solid #8b8b8b;
+}
+
+.bg-footer{
+    background-color: #000;
+}
+.text-span-services{
+    color: #db6d13 !important;
+}
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- contact --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- loading --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+#loading{
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+.content {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .planet {
+  width: 65%;
+  height: 65%;
+  background-color: #546c8c;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform-origin: center center;
+  box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
+  animation: planet 5s ease infinite alternate;
+  /* planet ring */
+  /* to cover the back of the ring */
+  /* planet spots */
+}
+@keyframes planet {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.content .planet .ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #bacbd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 33% center;
+  box-shadow: 2px -10px 0px rgba(0, 0, 0, 0.1), inset -5px -10px 0px rgba(0, 0, 0, 0.1);
+  animation: ring 3s ease infinite;
+  /* small ball */
+  /* inner ring */
+}
+@keyframes ring {
+  0% {
+    transform: rotateX(110deg) rotateZ(0deg) translate(-50px, 5px);
+  }
+  100% {
+    transform: rotateX(110deg) rotateZ(360deg) translate(-50px, 5px);
+  }
+}
+.content .planet .ring:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #7ea1bf;
+  z-index: 2;
+  left: calc(0px - 5px);
+  box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.content .planet .ring:after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: #7ea1bf;
+  box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
+}
+.content .planet .cover-ring {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transform: translate(0px, -17px);
+  background-color: #546c8c;
+  z-index: 2;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
+}
+.content .planet .spots {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+.content .planet .spots span {
+  width: 30px;
+  height: 30px;
+  background-color: #3c4359;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: inset -2px 3px 0px rgba(0, 0, 0, 0.3);
+  animation: dots 5s ease infinite alternate;
+}
+@keyframes dots {
+  0% {
+    box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+.content .planet .spots span:nth-child(1) {
+  top: 20px;
+  right: 50px;
+}
+.content .planet .spots span:nth-child(2) {
+  top: 40px;
+  left: 50px;
+  width: 15px;
+  height: 15px;
+}
+.content .planet .spots span:nth-child(3) {
+  top: 80px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+}
+.content .planet .spots span:nth-child(4) {
+  top: 80px;
+  left: 90px;
+  width: 40px;
+  height: 40px;
+}
+.content .planet .spots span:nth-child(5) {
+  top: 160px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+}
+.content .planet .spots span:nth-child(6) {
+  top: 165px;
+  left: 125px;
+  width: 10px;
+  height: 10px;
+}
+.content .planet .spots span:nth-child(7) {
+  top: 90px;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+}
+.content p {
+  color: #bacbd9;
+  font-size: 14px;
+  z-index: 2;
+  position: absolute;
+  bottom: -20px;
+  font-family: "Roboto Mono", monospace;
+  animation: text 4s ease infinite;
+  width: 100px;
+  text-align: center;
+}
+@keyframes text {
+  0% {
+    transform: translateX(-30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
+  }
+  25% {
+    letter-spacing: 3px;
+    color: #7ea1bf;
+  }
+  50% {
+    transform: translateX(30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
+  }
+  75% {
+    letter-spacing: 3px;
+    color: #7ea1bf;
+  }
+  100% {
+    transform: translateX(-30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
+  }
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- loading --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
